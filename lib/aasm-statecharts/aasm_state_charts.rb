@@ -1,5 +1,5 @@
 require 'graphviz'
-require 'psych'
+require 'yaml'
 
 require 'aasm'
 
@@ -300,9 +300,9 @@ module AASM_StateChart
         if File.exist? config_fn
           File.open config_fn do |cf|
             begin
-              parsed_config = Psych.safe_load(cf, aliases: true)
-            rescue Psych::SyntaxError => ex
-              ex.message
+              parsed_config = YAML.load_file(cf)
+            # rescue Psych::SyntaxError => ex
+            #   ex.message
             end
           end
         else

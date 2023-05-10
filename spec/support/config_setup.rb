@@ -1,6 +1,6 @@
 #module ConfigSetup
 
-require 'psych'
+require 'yaml'
 
 OUT_DIR = './spec/spec-out'
 
@@ -12,9 +12,9 @@ def config_from(fn)
   if File.exist? fn
     File.open fn do |cf|
       begin
-        config = Psych.safe_load(cf, aliases: true)
-      rescue Psych::SyntaxError => ex
-        ex.message
+        config = YAML.load_file(cf)
+      # rescue Psych::SyntaxError => ex
+      #   ex.message
       end
     end
   end
