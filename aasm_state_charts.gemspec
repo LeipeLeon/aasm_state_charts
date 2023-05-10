@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.files       = Dir.glob("#{File.join('lib', '**', '*')}") + ['bin/aasm_state_charts'] + %w(README.md LICENSE.txt blue_config_example.yml)
   s.executables = ['aasm_state_charts']
 
-  s.homepage    = 'http://rubygems.org/gems/aasm_state_charts'
+  s.homepage    = "https://github.com/LeipeLeon/aasm_state_charts/"
   s.license     = 'MIT'
 
   s.add_dependency 'rails', '>= 4.0'
