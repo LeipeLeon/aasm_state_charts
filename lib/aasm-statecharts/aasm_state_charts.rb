@@ -26,7 +26,7 @@ require 'active_support/core_ext' # must explicitly require so that blank? metho
 #
 # For example, to render the state machine associated with a class named ModelClass,
 # you would do the following:
-#   
+#
 #   renderer = AASM_StateChart::Renderer.new(ModelClass)
 #   renderer.save(filename, format: 'png')
 #
@@ -300,7 +300,7 @@ module AASM_StateChart
         if File.exist? config_fn
           File.open config_fn do |cf|
             begin
-              parsed_config = Psych.safe_load(cf)
+              parsed_config = Psych.safe_load(cf, aliases: true)
             rescue Psych::SyntaxError => ex
               ex.message
             end

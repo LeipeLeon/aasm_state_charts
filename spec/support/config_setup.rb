@@ -12,7 +12,7 @@ def config_from(fn)
   if File.exist? fn
     File.open fn do |cf|
       begin
-        config = Psych.safe_load(cf)
+        config = Psych.safe_load(cf, aliases: true)
       rescue Psych::SyntaxError => ex
         ex.message
       end
