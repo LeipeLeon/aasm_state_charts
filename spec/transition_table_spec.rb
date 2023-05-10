@@ -2,7 +2,7 @@
 #
 # @file transition_table_spec.rb
 #
-# @desc Unit tests (RSpec) for the  TransitionTable class in the aasm_statecharts gem
+# @desc Unit tests (RSpec) for the  TransitionTable class in the aasm_state_charts gem
 #
 # @author Ashley Engelund (ashley@ashleycaroline.com  weedySeaDragon @ github)
 # @date   1/11/17

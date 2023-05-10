@@ -1,12 +1,12 @@
-require_relative "lib/aasm-statecharts/version"
+require_relative "lib/aasm-state-charts/version"
 
 
 task :build do
-  system "gem build aasm_statecharts.gemspec"
+  system "gem build aasm_state_charts.gemspec"
 end
 
 task :release => :build do
-  system "gem push aasm_statecharts-#{AASM_StateChart::VERSION}"
+  system "gem push aasm_state_charts-#{AASM_StateChart::VERSION}"
 end
 
 

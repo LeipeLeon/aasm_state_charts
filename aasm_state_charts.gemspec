@@ -1,7 +1,7 @@
-require File.join(__dir__, 'lib','aasm-statecharts', 'version')
+require File.join(__dir__, 'lib','aasm-state-charts', 'version')
 
 Gem::Specification.new do |s|
-  s.name        = 'aasm_statecharts'
+  s.name        = 'aasm_state_charts'
   s.version     = AASM_StateChart::VERSION
   s.date        = '2017-09-12'
   s.summary     = "AASM statecharts"
@@ -9,10 +9,10 @@ Gem::Specification.new do |s|
   s.authors     = ["Ashley Engelund"]
   s.email       = ['ashley@ashleycaroline.com']
 
-  s.files       = Dir.glob("#{File.join('lib', '**', '*')}") + ['bin/aasm_statecharts'] + %w(README.md LICENSE.txt blue_config_example.yml)
-  s.executables = ['aasm_statecharts']
+  s.files       = Dir.glob("#{File.join('lib', '**', '*')}") + ['bin/aasm_state_charts'] + %w(README.md LICENSE.txt blue_config_example.yml)
+  s.executables = ['aasm_state_charts']
 
-  s.homepage    = 'http://rubygems.org/gems/aasm_statecharts'
+  s.homepage    = 'http://rubygems.org/gems/aasm_state_charts'
   s.license     = 'MIT'
 
   s.add_dependency 'rails', '>= 4.0'

@@ -17,4 +17,4 @@ Gemfile.lock
 coverage
 /vendor/ruby/
 
-!/aasm_statecharts-1.*.*.gem
+!/aasm_state_charts-1.*.*.gem

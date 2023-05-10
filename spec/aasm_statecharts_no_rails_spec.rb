@@ -1,4 +1,4 @@
-# Unit tests for aasm_statecharts. All checks are performed against
+# Unit tests for aasm_state_charts. All checks are performed against
 # the representation held by Ruby-Graphviz, not the files written
 # to disk; we're dependent on Ruby-Graphviz and dot getting it right.
 #

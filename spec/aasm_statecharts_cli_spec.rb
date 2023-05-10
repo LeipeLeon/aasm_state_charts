@@ -1,6 +1,6 @@
 #--------------------------
 #
-# @file aasm_statecharts_cli_spec.rb
+# @file aasm_state_charts_cli_spec.rb
 #
 # @desc Description
 #

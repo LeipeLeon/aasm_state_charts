@@ -6,7 +6,7 @@ $VERBOSE = nil
 require 'optionparser'
 require 'graphviz/constants'
 
-require_relative File.join(__dir__, '..', 'lib', 'aasm_statecharts')
+require_relative File.join(__dir__, '..', 'lib', 'aasm_state_charts')
 
 
 module AASM_StateChart
@@ -182,9 +182,9 @@ module AASM_StateChart
         opts.banner << "\n  generates the final graphic file."
         opts.banner << "\n\n  If you are going to graph a model that is a subclass of ActiveRecord (or any other Rails class),"
         opts.banner << "\n  you must run this from your <RailsRoot> directory.  Be sure to use the --directory option to specify the location of the models."
-        opts.banner << "\n\n  Example: To create a graph for the model MembershipApplication that is a subclass of ActiveRecord (in Rails):\n    aasm_statecharts application"
-        opts.banner << "\n\n  Example: For the Application model above,create a .jpg file and put it in the ./output/graphs directory and use the configuration file my_ugly_colors.yml:\n    aasm_statecharts --directory ./output/graphs --config my_ugly_colors.yml --file jpg application "
-        opts.banner << "\n\n  Example: To create a graph for the model Purchase that exists in the file ./models/purchase.rb and Purchase does NOT inherit from anything in Rails:\n    aasm_statecharts --no-rails --include ./models purchase   "
+        opts.banner << "\n\n  Example: To create a graph for the model MembershipApplication that is a subclass of ActiveRecord (in Rails):\n    aasm_state_charts application"
+        opts.banner << "\n\n  Example: For the Application model above,create a .jpg file and put it in the ./output/graphs directory and use the configuration file my_ugly_colors.yml:\n    aasm_state_charts --directory ./output/graphs --config my_ugly_colors.yml --file jpg application "
+        opts.banner << "\n\n  Example: To create a graph for the model Purchase that exists in the file ./models/purchase.rb and Purchase does NOT inherit from anything in Rails:\n    aasm_state_charts --no-rails --include ./models purchase   "
 
 
         opts.banner << "\n\nOptions:"

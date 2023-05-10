@@ -13,7 +13,7 @@ require_relative 'version'
 #
 # For example, to render the state machine associated with a class named ModelClass,
 # you would do the following:
-#   
+#
 #   renderer = AASM_StateChart::Renderer.new(ModelClass)
 #   renderer.save(filename, format: 'png')
 #

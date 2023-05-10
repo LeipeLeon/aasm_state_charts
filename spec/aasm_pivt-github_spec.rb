@@ -1,4 +1,4 @@
-# Unit tests for aasm_statecharts. All checks are performed against
+# Unit tests for aasm_state_charts. All checks are performed against
 # the representation held by Ruby-Graphviz, not the files written
 # to disk; we're dependent on Ruby-Graphviz and dot getting it right.
 #
@@ -26,7 +26,7 @@ describe AASM_StateChart::AASM_StateCharts do
                 .update({directory: File.join(INCLUDE_PATH, 'shf')})
 
 
-# aasm_statecharts -i ./spec/fixtures/shf -d ./spec/spec-out/shf -c ./spec/fixtures/shf/aasm_diagram_blue_green_config.yml pivotal_tracker_feature
+# aasm_state_charts -i ./spec/fixtures/shf -d ./spec/spec-out/shf -c ./spec/fixtures/shf/aasm_diagram_blue_green_config.yml pivotal_tracker_feature
 
     it_will 'not raise an error', 'pivotal_tracker_feature',
             good_options.update({models: ['pivotal_tracker_feature']})

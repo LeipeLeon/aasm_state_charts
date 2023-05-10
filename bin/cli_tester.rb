@@ -1,13 +1,13 @@
-require_relative '../lib/aasm_statecharts'
+require_relative '../lib/aasm_state_charts'
 
-load File.join(__dir__, 'aasm_statecharts')
+load File.join(__dir__, 'aasm_state_charts')
 
 
 # ["-#{arg_info[:short]}", "#{arg_info[:option]}", "#{arg_info[:model]}"]
 
 #FileUtils.cd (File.expand_path('~/github/AV--shf-project'))
 
-#./bin/aasm_statecharts -i ./spec/fixtures/shf  -c ./spec/fixtures/shf/aasm_diagram_blue_green_config.yml -n -d ./spec/fixtures/shf pivotal_tracker_feature
+#./bin/aasm_state_charts -i ./spec/fixtures/shf  -c ./spec/fixtures/shf/aasm_diagram_blue_green_config.yml -n -d ./spec/fixtures/shf pivotal_tracker_feature
 
 args = ["-i", "./spec/fixtures/shf",
         "-c", "./spec/fixtures/shf/aasm_diagram_blue_green_config.yml",
